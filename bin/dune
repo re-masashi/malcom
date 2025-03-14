@@ -1,0 +1,17 @@
+(executable
+ (name main)
+ (modules 
+ 	Main 
+ 	Ast 
+ 	Typed_ast 
+ 	Ast_to_typed_ast 
+ 	Utils 
+ 	Typechecker 
+ 	Location 
+ 	Utils 
+ 	Ast_optimizer
+
+ 	Mir
+
+ )
+)
