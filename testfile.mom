@@ -1,1 +1,47 @@
-123
+# syntax is yet to decide. i started AST-first
+# but here's some tentative stuff
+
+use io
+
+#*
+Multiline comments
+are really useful 
+*#
+
+def operation (x: i32, y: i32, op: i32) =
+  match op
+   '+' => add x y
+   '-' => sub x y
+   '/' => div x y
+   '*' => mul x y
+   _ => panic "INVALID OPERATION"
+  end
+
+def multiexpr() = do
+  print("hello everynyan")
+  name = input("name: ") 
+  age: i32 = int(input("age: "))
+  print(name<>" is "<>str(age))
+end
+
+def ifelse val = do
+  if 1==1 then
+   2
+  else
+   3
+  if do # yes. do - end in if condition.
+    ld: int = val / 10
+    if ld == 3 then do
+      print(val)
+      true
+    end
+    else
+      false
+  end
+    print("ld is 3")
+  else
+   print("ld not 3")
+   
+end
+
+def pi = 3.14
