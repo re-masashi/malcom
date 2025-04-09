@@ -10,8 +10,5 @@
  	Location 
  	Utils 
  	Ast_optimizer
-
- 	Mir
-
  )
 )
